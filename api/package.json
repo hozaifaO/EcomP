@@ -11,11 +11,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "drizzle-orm": "^0.39.1",
     "express": "^4.21.2",
-    "tsx": "^4.19.2"
+    "pg": "^8.13.1"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.4",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3"
   }
 }
