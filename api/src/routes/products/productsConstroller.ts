@@ -63,6 +63,7 @@ export async function deleteProduct(req: Request, res: Response) {
             res.status(404).send('Product not found');
             return;
         }else{
+            
             res.json(deletedProduct);
         }
     }catch (error) {
