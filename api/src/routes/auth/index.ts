@@ -46,8 +46,8 @@ router.post('/login', validateData(loginUserSchema), async (req, res) => {
             return;
         }
 
-        //Create JWT token later and send
-        const token = jwt.sign({userId: user.id, role: user.role}, 'process.env.JWT_SECRET', {expiresIn: '12h'});
+        
+        const token = jwt.sign({userId: user.id, role: user.role}, String(process.env.JWT_SECRET), {expiresIn: '12h'});
 
         console.log("Passed creating token")
 

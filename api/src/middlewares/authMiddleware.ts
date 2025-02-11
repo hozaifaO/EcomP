@@ -12,7 +12,7 @@ export function verifyToken(req: Request, res: Response, next: NextFunction) {
 
     try{
 
-        const decoded = jwt.verify(token, 'process.env.JWT_SECRET');
+        const decoded = jwt.verify(token, String(process.env.JWT_SECRET));
         if(typeof decoded !== 'object'){
             res.status(401).json({error: 'Unauthorized'});
             return;

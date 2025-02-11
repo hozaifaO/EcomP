@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 app.use('/auth', authRouts);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(` server listening at http://localhost:${port}`);
 });
